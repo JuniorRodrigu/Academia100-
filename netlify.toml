@@ -3,6 +3,10 @@
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  VITE_IMG_BASE = "https://cdn.jsdelivr.net/gh/hasaneyldrm/exercises-dataset@7455efae41b330c265e7cd4b78dfa848e7ce5ebd/images/"
+  VITE_GIF_BASE = "https://cdn.jsdelivr.net/gh/hasaneyldrm/exercises-dataset@7455efae41b330c265e7cd4b78dfa848e7ce5ebd/videos/"
+
 [[redirects]]
   from = "/api/*"
   to = "https://YOUR_BACKEND_URL/api/:splat"
